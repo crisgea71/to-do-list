@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: lightpink; /* Light background color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* App Container */
+.app {
+  max-width: 600px; /* Maximum width of the app */
+  margin: 20px auto; /* Center the app */
+  padding: 20px;
+  background-color: royalblue; /* White background for the app */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+   /* Center the title */
+  color: white; /* Darker text color */
+  font-size: 2.5em; /* Large font size */
+  margin-bottom: 20px; 
+  text-transform: uppercase; /* Space below the title */
+}
+
+/* Form Styles */
+form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements */
+  margin-bottom: 20px; /* Space below the form */
+}
+
+input[type="text"],
+input[type="time"],
+button {
+  width: 100%; /* Full width for inputs and buttons */
+  padding: 10px; /* Inner padding */
+  margin-bottom: 10px; /* Space between elements */
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Font size */
+}
+
+/* Button Styles */
+button {
+  background-color: forestgreen; /* Blue background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  text-align: center; /* Center the list */
+}
+
+li {
+  display: flex; /* Use flexbox for list items */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center content */
+  padding: 10px; /* Inner padding */
+  border: 1px solid black; /* Black border */
+  background-color: lightgray; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between tasks */
+}
+
+/* Task Buttons Container */
+.task-buttons {
+  display: flex; /* Use flexbox for button layout */
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 10px; /* Space above the buttons */
+  align-items: center; /* Center buttons */
+}
+
+.task-buttons button {
+  margin-bottom: 5px; /* Space between buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    color:black; /* Adjust heading size for smaller screens */
+  }
+  .app {
+    margin: 10px; /* Reduce margin on smaller screens */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
